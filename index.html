@@ -49,14 +49,33 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#services">About</a>
+                        <a href="#story">About</a>
                     </li>
                     <li>
-                        <a href="http://www.cantab.net/users/dickins/">Old Site</a>
+                        <a href="people.html">People</a>
                     </li>
-                    <li>
-                        <a href="http://bendickins.net/bioinformatics/">Teaching</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Publications <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <li class="dropdown-header">External</li>
+                            <li><a tabindex="-1" href="https://scholar.google.co.uk/citations?user=ActR7hIAAAAJ&amp;hl=en">Google Scholar</a></li>
+                            <li><a tabindex="-1" href="http://llr.ntu.ac.uk/rpd/researchpublications.php?pubid=b0063f20-1f8c-400b-9f9f-d471a315096e">NTU iRep</a></li>
+                            <li><a tabindex="-1" href="http://orcid.org/0000-0002-0866-6232">ORCID</a></li>
+                        </ul>
                     </li>
+                    <!--/.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teaching <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <li class="dropdown-header">Classes</li>
+                            <li><a tabindex="-1" href="http://bendickins.net/bioinformatics/">BIOL33221 Bioinformatics</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Communication</li>
+                            <li><a tabindex="-1" href="https://bdtutorials.slack.com">Project/Tutorial Slack</a></li>
+                            <li><a tabindex="-1" href="https://twitter.com/NTUSciTech">NTU Science Tech Twitter</a></li>
+                        </ul>
+                    </li>
+                    <!--/.dropdown -->
                     <li>
                         <a href="mailto:benjamin.dickins@ntu.ac.uk">Contact</a>
                     </li>
@@ -101,30 +120,27 @@
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-
-	<a  name="services"></a>
+    <a name="story"></a>
     <div class="content-section-a">
 
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-5 col-sm-6">
-                  <hr class="section-heading-spacer">
-                  <div class="clearfix"></div>
-                  <h2 class="section-heading">Welcome</h2>
-                  <p class="lead">There's work going on to refine this site so you might want to look at
-                    my <a href="https://www.ntu.ac.uk/staff-profiles/science-technology/benjamin-dickins">staff profile at NTU</a> and my
-                    <a href="https://scholar.google.co.uk/citations?user=ActR7hIAAAAJ&amp;hl=en">Google Scholar profile</a> for current
-                    publications. Just <em>a little</em> biographical info can be found at
-                    the <a href="http://www.cantab.net/users/dickins/">old lab website</a>. Bioinformatics students, please take a look at
-                    my <a href="http://bendickins.net/bioinformatics/">workshop pages</a>.</p>
-              </div>
-              <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                  <img class="img-responsive" src="img/work-resize.jpg" alt="">
-              </div>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Welcome</h2>
+                    <p class="lead">There's work going on to refine this site so you might want to look at my <a href="https://www.ntu.ac.uk/staff-profiles/science-technology/benjamin-dickins">staff profile at NTU</a> and my
+                        <a href="https://scholar.google.co.uk/citations?user=ActR7hIAAAAJ&amp;hl=en">Google Scholar profile</a> for publications. Bioinformatics students, please look at the teaching menu at the top of the screen for local resources.
+                        Some of you will find <a href="https://usegalaxy.org">Galaxy</a> useful or the
+                        <a href="https://cpt.tamu.edu/galaxy-pub/">Center for Phage Therapy's version</a>.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/work-resize.jpg" alt="">
+                </div>
+            </div>
 
-      </div>
-      <!-- /.container -->
+        </div>
+        <!-- /.container -->
 
     </div>
     <!-- /.content-section-a -->
@@ -138,9 +154,8 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Experimental Evolution</h2>
-                    <p class="lead">To explore adaptation, we need an approach that holds most factors constant. In our
-                    lab we have taken the time to develop apparatus to investigate the effects of high mutation rates or fluctuating environments
-                  on evolving bacteriophage populations.</p>
+                    <p class="lead">To explore adaptation, we need an approach that holds most factors constant. In our lab we have built apparatus (e.g., the chemostat opposite) and refined protocols (e.g., qPCR assays) to control and measure the effects of high mutation
+                        rates or fluctuating environments on fitness and other phenotypes in evolving bacteriophage populations.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/chemostat-resize.jpg" alt="">
@@ -162,9 +177,9 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Sequencing</h2>
-                    <p class="lead">As well as examining phenotypes, we quantify genetic variation in evolving populations. We use
-                      next-generation sequencing to detect polymorphisms from population samples and have developed several approaches to the analysis of these data.</p>
-              </div>
+                    <p class="lead">As well as examining phenotypes, we quantify genetic variation in evolving populations. We use next-generation sequencing to detect polymorphisms from population samples and have developed several approaches to the analysis of these
+                        data (esp. related to variant calling).</p>
+                </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/genome-resize.jpg" alt="">
                 </div>
@@ -185,8 +200,8 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Simulation</h2>
-                    <p class="lead">We also work with <a href="https://github.com/tethig/simulations">individual-based simulations</a> of viral evolution. We do this
-                      to explore dynamics that are difficult to predict using analytical approaches (for example owing to epistasis or changing recombination frequencies).</p>
+                    <p class="lead">We also work with <a href="https://github.com/tethig/simulations">individual-based simulations</a> of viral evolution. We do this to explore dynamics that are difficult to predict using analytical approaches (for example owing to epistasis
+                        or changing recombination frequencies).</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/sim-resize.png" alt="">
@@ -199,7 +214,7 @@
     </div>
     <!-- /.content-section-b -->
 
-	<a  name="contact"></a>
+    <a name="contact"></a>
     <div class="banner">
 
         <div class="container">
@@ -240,22 +255,18 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">About</a>
+                            <a href="#story">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="http://www.cantab.net/users/dickins/">Old Site</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="http://www.bendickins.net/bioinformatics/">Teaching</a>
+                            <a href="people.html">People</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
                             <a href="mailto:benjamin.dickins@ntu.ac.uk">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Constructed by Ben Dickins using a bootstrap theme.</p>
+                    <p class="copyright text-muted small">Constructed by Ben Dickins using landing page (a bootstrap theme).</p>
                 </div>
             </div>
         </div>
